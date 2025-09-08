@@ -1,6 +1,6 @@
 {
-  "name": "nextjs-app-boilerplate",
-  "description": "NextJS with app directory boilerplate",
+  "name": "almuetasim-website",
+  "description": "A website for Almuetasim",
   "version": "0.1.0",
   "private": false,
   "scripts": {
