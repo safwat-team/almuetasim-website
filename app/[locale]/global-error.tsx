@@ -11,9 +11,7 @@ type GlobalErrorProps = {
 export default function GlobalError({ error, reset }: GlobalErrorProps) {
   const tGlobal = useScopedI18n("global");
 
-  useEffect(() => {
-    console.error(error);
-  }, [error]);
+  useEffect(() => {}, [error]);
 
   return (
     <html>

@@ -1,13 +1,17 @@
-import { getScopedI18n } from "@/locales/server";
 import ClientComponent from "./components/ClientComponent";
+import ProductsCard from "@/lib/components/proCards";
+import CategoryCards from "@/lib/components/CategoryCards";
+import Newsletter from "./components/Newsletter";
 
 const Home = async () => {
-  const tGlobal = await getScopedI18n("global");
-
   return (
-    <main className="flex h-screen items-center justify-center">
-      <h1>{tGlobal("welcome", { name: "John Doe" })}</h1>
-      <ClientComponent />
+    <main className="bg-gradient-to-b from-base-200 to-base-100">
+      <div className="container mx-auto px-4 py-8 space-y-8">
+        <ClientComponent />
+        <CategoryCards />
+        <ProductsCard />
+        <Newsletter />
+      </div>
     </main>
   );
 };

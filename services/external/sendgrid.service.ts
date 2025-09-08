@@ -26,6 +26,7 @@ class SendGridService {
   /**
    * Send an email using SendGrid
    */
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   async sendEmail(
     options: SendGridEmailOptions,
   ): Promise<ServiceResponse<SendGridResponse>> {
@@ -36,8 +37,6 @@ class SendGridService {
       // await sgMail.send(msg);
 
       // For now, we'll simulate a successful email send
-      console.log("SendGrid email would be sent with options:", options);
-
       // Simulate API call delay
       await new Promise((resolve) => setTimeout(resolve, 100));
 
@@ -48,7 +47,6 @@ class SendGridService {
         },
       };
     } catch (error) {
-      console.error("SendGrid email error:", error);
       return {
         success: false,
         message:

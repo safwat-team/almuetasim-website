@@ -86,7 +86,6 @@ export default class HttpService<T = any> extends HttpServiceAbstract<T> {
       await appRedirect("/login");
       return false;
     } catch (error) {
-      console.error("Token refresh failed:", error);
       return false;
     }
   }
@@ -159,7 +158,6 @@ export default class HttpService<T = any> extends HttpServiceAbstract<T> {
           : `Request failed with status ${response.status}`,
       };
     } catch (error) {
-      console.error("Request failed:", error);
       return {
         success: false,
         message:

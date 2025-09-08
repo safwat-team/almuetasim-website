@@ -15,7 +15,6 @@ export const useThemeStore = create<ThemeState>((set) => ({
       const themeValue = await getCookieAction(COOKIE_NAMES.THEME);
       set({ theme: themeValue });
     } catch (error) {
-      console.error("Failed to fetch theme cookie:", error);
       set({ theme: undefined });
     }
   },
