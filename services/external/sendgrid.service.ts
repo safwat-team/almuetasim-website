@@ -28,7 +28,7 @@ class SendGridService {
    */
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   async sendEmail(
-    options: SendGridEmailOptions,
+    _options: SendGridEmailOptions,
   ): Promise<ServiceResponse<SendGridResponse>> {
     try {
       // In a real implementation, you would use the SendGrid SDK here:

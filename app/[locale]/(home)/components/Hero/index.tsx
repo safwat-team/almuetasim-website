@@ -1,17 +1,12 @@
-"use client";
+const Hero = () => {
+  // const { fetchTheme } = useThemeStore();
 
-import { useEffect } from "react";
-import { useThemeStore } from "@/stores/themeStore";
-
-const ClientComponent = () => {
-  const { fetchTheme } = useThemeStore();
-
-  useEffect(() => {
-    fetchTheme();
-  }, [fetchTheme]);
+  // useEffect(() => {
+  //   fetchTheme();
+  // }, [fetchTheme]);
 
   return (
-    <section className="hero bg-gradient-to-r from-primary to-secondary text-white animate-fade-in-up">
+    <section className="hero bg-gradient-to-r from-primary to-secondary text-white min-h-screen">
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h1 className="text-5xl font-bold mb-4 animate-fade-in-up">
@@ -29,4 +24,4 @@ const ClientComponent = () => {
   );
 };
 
-export default ClientComponent;
+export default Hero;
